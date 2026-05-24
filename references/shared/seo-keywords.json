@@ -1,0 +1,51 @@
+{
+  "_instructions": "Keyword strategy for SEO content, YouTube, and blog posts. Skills read this to understand which topics have search intent, what the primary keywords are, and how to structure content for discovery. Update this as your keyword strategy evolves.",
+
+  "seo_keywords": {
+    "primary_topics": [
+      {
+        "topic": "[TOPIC 1 — e.g. 'B2B content strategy']",
+        "primary_keyword": "[EXACT SEARCH PHRASE — e.g. 'content strategy for B2B founders']",
+        "secondary_keywords": ["[RELATED TERM 1]", "[RELATED TERM 2]", "[RELATED TERM 3]"],
+        "search_intent": "[informational / commercial / transactional]",
+        "content_already_exists": "[true OR false]",
+        "notes": "[OPTIONAL — e.g. 'low competition, high intent, good for pillar page']"
+      },
+      {
+        "topic": "[TOPIC 2]",
+        "primary_keyword": "",
+        "secondary_keywords": [],
+        "search_intent": "",
+        "content_already_exists": "",
+        "notes": ""
+      }
+    ],
+
+    "longtail_opportunities": [
+      "[LONG-TAIL KEYWORD 1 — specific question your audience searches]",
+      "[LONG-TAIL KEYWORD 2]",
+      "[LONG-TAIL KEYWORD 3]"
+    ],
+
+    "competitor_keywords": {
+      "_instructions": "Keywords your competitors rank for that you want to target.",
+      "targets": [
+        "[COMPETITOR KEYWORD 1]",
+        "[COMPETITOR KEYWORD 2]"
+      ]
+    },
+
+    "avoid_keywords": [
+      "[KEYWORD TO AVOID 1 — e.g. too broad, too competitive, or off-brand]",
+      "[KEYWORD TO AVOID 2]"
+    ],
+
+    "youtube_specific": {
+      "channel_keywords": ["[CHANNEL TAG 1]", "[CHANNEL TAG 2]", "[CHANNEL TAG 3]"],
+      "high_performing_search_terms": [
+        "[SEARCH TERM THAT BRINGS VIEWERS TO YOUR CHANNEL 1]",
+        "[SEARCH TERM 2]"
+      ]
+    }
+  }
+}

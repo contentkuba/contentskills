@@ -1,0 +1,16 @@
+{
+  "writing_style": {
+    "sentence_length": "[DESCRIBE SPOKEN SENTENCE LENGTH — e.g. 'very short punchy hook lines followed by slightly longer explanatory sentences . nothing over 20 words per spoken sentence' OR 'consistently short and clipped throughout . sounds like thinking out loud' OR 'varied — short for hooks and emphasis, medium for explanation, never long']",
+    "paragraph_length_as_beats": "[DESCRIBE BEAT LENGTH — e.g. '1–3 spoken sentences per beat . each beat lands one idea before moving on' OR '2–4 sentences per beat . moderate pacing' OR '1 sentence max per beat . aggressive jump cuts']",
+    "use_of_questions": "[true OR false — does the creator ask the viewer rhetorical or direct questions in Reels?]",
+    "use_of_lists": "[true OR false — does the creator verbally list items inside Reels? e.g. 'three things I changed']",
+    "use_of_emojis_on_screen": "[DESCRIBE — e.g. 'never used in on-screen text' OR 'rare . used as visual bullets only' OR 'frequently used in on-screen text to add energy']",
+    "use_of_hashtags_in_caption": "[true OR false]",
+    "hashtag_count_per_post": "[NUMBER — e.g. 0 OR 3 OR 5]",
+    "on_screen_text_style": "[DESCRIBE — e.g. 'bold key phrase only . 1–3 words . appears for 1.5–3 seconds . never transcribes spoken words . names the mechanism or number' OR 'full subtitle style . every word on screen']",
+    "use_of_capitalization_on_screen": "[true OR false — e.g. does the creator use ALL CAPS for emphasis in on-screen text?]",
+    "storytelling_arc": "[DESCRIBE NARRATIVE STRUCTURE for Reels — e.g. 'hook (bold claim or challenge) → tension (what most people do wrong) → reframe (what actually works) → proof (one example or result) → CTA (low-friction keyword trigger)' OR 'problem → stakes → mechanism → outcome → CTA' OR 'story open → universal lesson → practical system → CTA']",
+    "pacing_notes": "[DESCRIBE EDITING PACE — e.g. 'jump cut every 3–5 seconds on talking head . B-roll cut timed to spoken emphasis . no transitions . music: lo-fi ambient or none' OR 'slower deliberate pace . fewer cuts . more sustained eye contact with camera']",
+    "target_runtime_seconds": "[NUMBER RANGE — e.g. '45–60' OR '30–45' OR '60–75']"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "_instructions": "Run this filter on every piece of content before delivering. If the AI signal score hits 21 or above, rewrite before handing over. This is the quality gate that makes content sound human.",
+
+  "name": "content_ai_writing_filter",
+  "version": "1.0.0",
+  "goal": "Reduce AI-detectable patterns in all written content by enforcing specificity, grounded evidence, natural voice, and non-templated structure.",
+  "mode": "revise_in_place",
+
+  "scoring": {
+    "max_ai_signal_score": 20,
+    "block_if_score_at_or_above": 21,
+    "weights": {
+      "generic_language": 4,
+      "template_structure": 4,
+      "ungrounded_stats": 5,
+      "buzzword_solution_reveal": 3,
+      "benefit_stacking": 3,
+      "slogan_aphorisms": 3,
+      "over_polished_cadence": 3,
+      "punctuation_styling": 2,
+      "lack_of_authorship_markers": 4
+    }
+  },
+
+  "lint_rules": [
+    {
+      "id": "R001_generic_quantifiers",
+      "signal": "generic_language",
+      "description": "Flags vague quantifiers that make content sound universally applicable.",
+      "patterns": ["\\bmost\\b", "\\bmany\\b", "\\bevery\\b", "\\balways\\b", "\\bnever\\b", "\\bentirely\\b", "\\bany company\\b", "\\beveryone\\b"],
+      "penalty": 3,
+      "fix": "Replace with scoped context: role type, specific situation, timeframe, or 'in my experience'."
+    },
+    {
+      "id": "R002_template_triplet_lines",
+      "signal": "template_structure",
+      "description": "Flags rhythmic triplets: 'It's the X. The Y. The Z.'",
+      "patterns": ["It's the[^\\.]+\\.\\s*The[^\\.]+\\.\\s*The[^\\.]+\\.", "The[^\\.]+\\.\\s*The[^\\.]+\\.\\s*The[^\\.]+\\."],
+      "penalty": 4,
+      "fix": "Collapse into 1–2 sentences with uneven length and one concrete example."
+    },
+    {
+      "id": "R003_ungrounded_statistics",
+      "signal": "ungrounded_stats",
+      "description": "Flags precise stats without a source.",
+      "patterns": ["\\b\\d{1,3}%\\b"],
+      "exceptions": ["source:", "study:", "report:", "according to", "data from"],
+      "penalty": 6,
+      "fix": "Add source with publication name and year, or remove the stat and replace with a bounded non-numeric claim."
+    },
+    {
+      "id": "R004_buzzword_solution_reveal",
+      "signal": "buzzword_solution_reveal",
+      "description": "Flags sudden category reveals and buzzword pivots.",
+      "patterns": ["changes the equation", "game[-\\s]?changer", "changes everything", "the future of", "revolutionize"],
+      "penalty": 4,
+      "fix": "Replace with plain language. Name one limitation or boundary."
+    },
+    {
+      "id": "R005_benefit_stacking",
+      "signal": "benefit_stacking",
+      "description": "Flags long benefit lists with no tradeoffs or constraints.",
+      "patterns": ["It\\s+([a-z].+?)(\\.\\s*It\\s+){2,}", "instantly.*around the clock", "at every stage", "handles the moments"],
+      "penalty": 4,
+      "fix": "Cut benefit list by 30–50%. Add at least one constraint, boundary, or 'when it doesn't work'."
+    },
+    {
+      "id": "R006_slogan_aphorisms",
+      "signal": "slogan_aphorisms",
+      "description": "Flags standalone slogan lines that could be pasted into any post.",
+      "heuristics": "max one slogan-like line per piece",
+      "penalty": 3,
+      "fix": "Keep at most one. Follow immediately with a concrete example."
+    },
+    {
+      "id": "R007_over_polished_cadence",
+      "signal": "over_polished_cadence",
+      "description": "Flags overly uniform short line breaks and consistent sentence length.",
+      "heuristics": {
+        "max_consecutive_short_lines": 5,
+        "short_line_max_chars": 70
+      },
+      "penalty": 3,
+      "fix": "Merge some lines into fuller sentences. Allow one paragraph to be longer and more detailed."
+    },
+    {
+      "id": "R008_em_dash_overuse",
+      "signal": "punctuation_styling",
+      "description": "Flags repeated em dash use as a stylistic crutch.",
+      "heuristics": { "max_em_dashes": 1 },
+      "penalty": 2,
+      "fix": "Replace extra em dashes with a period or comma."
+    },
+    {
+      "id": "R009_missing_authorship_markers",
+      "signal": "lack_of_authorship_markers",
+      "description": "Flags absence of personal perspective or concrete observation.",
+      "requires_at_least_one": ["first_person_experience", "specific_example_or_case", "named_process_detail", "real_metric_with_context"],
+      "penalty": 6,
+      "fix": "Add one authorship marker: 'I reviewed...', 'We changed...', 'A client asked...'. Include one concrete detail: timeframe, tool name, stage name, or a real situation."
+    }
+  ],
+
+  "post_quality_checks": [
+    {
+      "id": "Q001_source_if_stats",
+      "check": "if_contains_percentage_require_source_line"
+    },
+    {
+      "id": "Q002_one_real_example",
+      "check": "require_one_concrete_example_or_situation"
+    },
+    {
+      "id": "Q003_limit_slogans",
+      "check": "max_one_universal_truth_line_per_piece"
+    }
+  ],
+
+  "language_preferences": {
+    "avoid_words": ["changes the equation", "game-changer", "at scale", "seamless", "revolutionize", "around the clock", "not just", "entirely", "unlock", "dive into", "delve into"],
+    "prefer_patterns": ["in my experience", "what I saw in [specific situation]", "one pattern that keeps showing up", "this is where it helps, and where it doesn't"]
+  }
+}

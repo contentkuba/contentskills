@@ -1,0 +1,10 @@
+{
+  "voice": {
+    "formality_level": "[DESCRIBE FORMALITY — e.g. 'conversational . strategic . builder-led (plain spoken language with sharp positioning vocabulary)' OR 'casual . warm . community-first' OR 'direct . no-nonsense . operator-facing']",
+    "pov": "[DESCRIBE ON-CAMERA POV — e.g. 'strong first-person practitioner (I tested . I built . a client I worked with) blended with direct audience address (if you're a B2B founder) to create immediate relevance' OR 'case-study focus with personal commentary and lessons drawn' OR 'mentor voice — seen it all, cutting through the noise']",
+    "energy": "[LIST 4–5 ENERGY DESCRIPTORS for on-camera presence — e.g. 'confident . contrarian . precise . systems-oriented . zero-hype' OR 'warm . grounded . encouraging . direct . practitioner-first']",
+    "humor": "[DESCRIBE HUMOR STYLE on camera — e.g. 'dry and self-aware . occasional deadpan observation . never motivational or hype-driven' OR 'none . strictly professional' OR 'light and relatable . uses analogies the audience recognizes']",
+    "on_camera_presence": "[DESCRIBE HOW THEY COME ACROSS ON CAMERA — e.g. 'talks directly to camera . no teleprompter feel . slight imperfections are fine and authentic . does not over-edit pauses' OR 'very polished . high production value . minimal stumbles' OR 'walking and talking . thinking out loud . less produced = more credible']",
+    "notes": "[FREE-FORM VOICE DESCRIPTION for Reels — how they open, how they pace their speech, how they handle the camera, what makes them sound like themselves vs AI. Example: 'Opens with a bold claim or a direct challenge to the viewer. Speaks in short declarative sentences with natural pauses for emphasis. Avoids reading from a script — prefers to internalize the structure and speak naturally. Does not rush. Treats the viewer as a peer, not a student. Ends with a single low-friction DM trigger, spoken casually as if it just occurred to them.']"
+  }
+}

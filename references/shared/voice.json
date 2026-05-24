@@ -1,0 +1,66 @@
+{
+  "_instructions": "Fill this in once. Every platform writer skill reads this file before generating content. This is the foundation of voice consistency across all formats.",
+
+  "voice": {
+    "brand_name": "[YOUR BRAND OR CREATOR NAME]",
+    "one_liner": "[ONE SENTENCE — what you do and who you do it for]",
+    "primary_content_goal": "[brand awareness / lead generation / sales / authority building / community]",
+
+    "formality_level": "[e.g. 'conversational and strategic — plain language with precise vocabulary' OR 'casual and warm' OR 'direct and operator-facing']",
+
+    "pov": "[DESCRIBE YOUR POINT OF VIEW — e.g. 'strong first-person practitioner (I tested, I built, a client I worked with) blended with direct audience address to create immediate relevance' OR 'mentor voice — seen it all, cutting through the noise']",
+
+    "energy": [
+      "[ENERGY DESCRIPTOR 1 — e.g. 'confident']",
+      "[ENERGY DESCRIPTOR 2 — e.g. 'contrarian']",
+      "[ENERGY DESCRIPTOR 3 — e.g. 'precise']",
+      "[ENERGY DESCRIPTOR 4 — e.g. 'zero-hype']",
+      "[ENERGY DESCRIPTOR 5 — e.g. 'systems-oriented']"
+    ],
+
+    "voice_is": [
+      "[DESCRIPTOR 1 — e.g. 'direct']",
+      "[DESCRIPTOR 2 — e.g. 'warm']",
+      "[DESCRIPTOR 3 — e.g. 'contrarian']",
+      "[DESCRIPTOR 4 — e.g. 'builder-led']",
+      "[DESCRIPTOR 5 — e.g. 'specific']"
+    ],
+
+    "voice_is_not": [
+      "[ANTI-DESCRIPTOR 1 — e.g. 'corporate']",
+      "[ANTI-DESCRIPTOR 2 — e.g. 'preachy']",
+      "[ANTI-DESCRIPTOR 3 — e.g. 'salesy']",
+      "[ANTI-DESCRIPTOR 4 — e.g. 'hype-driven']",
+      "[ANTI-DESCRIPTOR 5 — e.g. 'overly casual']"
+    ],
+
+    "humor": "[DESCRIBE HUMOR STYLE — e.g. 'dry and self-aware, occasional deadpan observation, never motivational' OR 'none — strictly professional' OR 'light and relatable, uses analogies the audience recognises']",
+
+    "pronoun": "[I / we]",
+
+    "swearing": "[never / occasionally / freely]",
+
+    "signature_pov": "[ONE PARAGRAPH — the core belief that shapes all content. The thing you believe that most people in your space don't.]",
+
+    "creators_admired": [
+      {
+        "name": "[CREATOR 1 NAME]",
+        "what_you_like": "[WHAT SPECIFICALLY you like about their style]"
+      },
+      {
+        "name": "[CREATOR 2 NAME]",
+        "what_you_like": "[WHAT SPECIFICALLY]"
+      }
+    ],
+
+    "voice_examples": {
+      "sounds_like_me": [
+        "[EXAMPLE 1 — paste a real piece of your content that sounds like you at your best]",
+        "[EXAMPLE 2]"
+      ],
+      "does_not_sound_like_me": [
+        "[EXAMPLE — paste something that sounds wrong: too AI, too corporate, too generic]"
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "_instructions": "Paste real examples of your best-performing content here. These are the gold standard Claude matches when writing new content. The more real examples you add, the better the voice fidelity. Minimum 5. Aim for 10–15 across different formats and pillars.",
+
+  "post_formats": [
+    "personal_story",
+    "contrarian_take",
+    "how_to_numbered",
+    "case_study",
+    "hot_take",
+    "behind_the_scenes",
+    "myth_buster",
+    "proof_story",
+    "framework_breakdown",
+    "direct_challenge"
+  ],
+
+  "examples": [
+    {
+      "id": "example-001",
+      "platform": "[LinkedIn / Instagram / X / Newsletter / Blog]",
+      "format": "[pick from post_formats above]",
+      "pillar": "[match to a pillar in content-pillars.json]",
+      "hook": "[THE OPENING LINE — copy verbatim]",
+      "full_content": "[FULL POST OR KEY EXCERPT — copy verbatim or closely paraphrased]",
+      "cta": "[THE CLOSING CTA — copy verbatim]",
+      "performance_notes": "[OPTIONAL — e.g. 'high saves, 50+ comments, 2x average reach']",
+      "what_works": "[OPTIONAL — e.g. 'specific hook, practitioner positioning, clear mechanism named']"
+    },
+    {
+      "id": "example-002",
+      "platform": "",
+      "format": "",
+      "pillar": "",
+      "hook": "",
+      "full_content": "",
+      "cta": "",
+      "performance_notes": "",
+      "what_works": ""
+    },
+    {
+      "_instructions": "Add a minimum of 5 real examples. Include variety across formats and pillars. The proof_story and case_study formats should appear at least twice — they drive the most saves and DM sends. Delete this object when done."
+    }
+  ],
+
+  "hooks_library": [
+    "[HOOK 1 — copy verbatim from a real post's opening line]",
+    "[HOOK 2]",
+    "[HOOK 3]",
+    "[HOOK 4]",
+    "[HOOK 5]",
+    "[Add as many as you have — these are what Claude samples from when writing new hooks]"
+  ],
+
+  "cta_library": [
+    "[CTA 1 — copy verbatim from a real post's closing CTA]",
+    "[CTA 2]",
+    "[CTA 3]",
+    "[Add as many as you have]"
+  ]
+}

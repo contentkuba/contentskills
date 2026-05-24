@@ -1,0 +1,22 @@
+{
+  "cta_style": {
+    "preferred_ctas": [
+      "[CTA EXAMPLE 1 — e.g. 'DM me \"SYSTEM\" and I'll send you the full breakdown.']",
+      "[CTA EXAMPLE 2 — e.g. 'Reply \"VOICE\" if you want to see how this works for your niche.']",
+      "[CTA EXAMPLE 3 — e.g. 'If you want me to build this for you, message me.']",
+      "[CTA EXAMPLE 4 — e.g. 'Save this — you'll want to come back to it.']",
+      "[CTA EXAMPLE 5 — add more as needed]"
+    ],
+    "cta_placement": [
+      "[WHERE CTAs GO IN THE REEL — e.g. 'always verbal at the end, last 5–10 seconds . optionally mirrored as on-screen text . never mid-Reel' OR 'end only . spoken casually as if it just occurred to the creator']"
+    ],
+    "keyword_triggers": [
+      "[ACTIVE KEYWORD 1 — e.g. 'SYSTEM' triggers an automated DM with a PDF breakdown]",
+      "[ACTIVE KEYWORD 2 — e.g. 'VOICE' triggers a DM with the voice cloning walkthrough]",
+      "[List all active keyword DM triggers here so Claude never creates a duplicate or conflicting trigger]"
+    ],
+    "notes": [
+      "[DESCRIBE CTA PHILOSOPHY — e.g. 'CTAs are short, direct, and low-friction. Strong preference for keyword-triggered DMs to filter intent. Spoken casually at the end of the Reel as if it just occurred to the creator — never pushed. On-screen text mirrors the keyword trigger word only. Never stack two CTAs. Never use a comment-bait question as a CTA.' OR 'Creator prefers save-focused CTAs over DM triggers for educational content. Comment-bait is off-brand.']"
+    ]
+  }
+}

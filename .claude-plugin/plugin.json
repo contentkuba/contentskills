@@ -1,0 +1,7 @@
+{
+  "name": "content-skills",
+  "description": "31 content marketing skills for creators, founders, and content teams",
+  "version": "1.0.0",
+  "skills": "./skills",
+  "strict": false
+}

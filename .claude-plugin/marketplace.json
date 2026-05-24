@@ -1,0 +1,19 @@
+{
+  "name": "contentskills",
+  "owner": {
+    "name": "StoryAngled",
+    "url": "https://storyangled.com"
+  },
+  "metadata": {
+    "description": "Content marketing skills for AI agents — LinkedIn, Instagram, YouTube, newsletters, SEO, strategy, distribution, and more",
+    "version": "1.0.0",
+    "repository": "https://github.com/[your-username]/contentskills"
+  },
+  "plugins": [
+    {
+      "name": "content-skills",
+      "description": "31 content marketing skills for creators, founders, and content teams: brand voice, audience personas, LinkedIn posts, Instagram captions, Reel scripts, carousels, YouTube scripts, newsletters, blog posts, SEO content, infographics, content strategy, editorial calendars, repurposing, distribution, podcast pitches, case studies, lead magnets, and more",
+      "source": "./"
+    }
+  ]
+}

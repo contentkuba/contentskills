@@ -1,0 +1,254 @@
+{
+  "hooks": [
+    {
+      "id": 1,
+      "template": "This one [content-type] contains more knowledge than a [degree]",
+      "original_example": "This one book contains more knowledge than a psychology degree"
+    },
+    {
+      "id": 2,
+      "template": "If you're a [person] and you [struggle with specific problem], then this video will either piss you off or make your day",
+      "original_example": "If you're a woman and you can't seem to lose that lower stupid belly fat. then this video will either piss you off or potentially make your day"
+    },
+    {
+      "id": 3,
+      "template": "If you're looking to lose all your [results], here are the [X] worst ways to [action]",
+      "original_example": "If you're looking to lose all your gains, Here are the 3 worst ways to workout"
+    },
+    {
+      "id": 4,
+      "template": "I'm really hope I'm not the first person that tell you this but…",
+      "original_example": "I'm really hope I'm not the first person that tell you this but…"
+    },
+    {
+      "id": 5,
+      "template": "There's 1 thing you can do to make your [—] [X] times better and it only takes [X] minutes a day",
+      "original_example": "There's 1 thing you can do to make your body look 10 times better and it only takes 10 minutes a day"
+    },
+    {
+      "id": 6,
+      "template": "The greatest [——] cheat code just dropped you're never missing your [result] after this",
+      "original_example": "The greatest protein cheat code just dropped you're never missing your macros after this"
+    },
+    {
+      "id": 7,
+      "template": "Here's a [X] minute thing that will drastically improve [specific outcome]",
+      "original_example": "Here's a five minute thing that will drastically improve the way that your manager sees you"
+    },
+    {
+      "id": 8,
+      "template": "Guys will deadass gatekeep really good [——] by just making them sound super complicated so let me simplify it",
+      "original_example": "Guys will deadass gatekeep really good sales techniques by just making them sound super complicated so let me simplify it"
+    },
+    {
+      "id": 9,
+      "template": "The biggest green flag that you're gonna [achieve result] is you're focused on this [X] thing[s]",
+      "original_example": "The biggest green flag that you're gonna make a whole bunch of money in your life is you're focused on this one thing"
+    },
+    {
+      "id": 10,
+      "template": "I love [—-] but [boring action] kind of sucks, so here are [X] things I do to make [boring action] suck a lot less",
+      "original_example": "I love chicken but cooking it kind of sucks so here are 3 things i do to make cooking it suck a lot less"
+    },
+    {
+      "id": 11,
+      "template": "99% of your success depends of this one thing",
+      "original_example": "99% of your success depends of this one thing"
+    },
+    {
+      "id": 12,
+      "template": "If you can't [achieve result], it's not because you're not [positive trait] it's because you don't know how to [action].",
+      "original_example": "If you can't make money it is not because you are not smart it is because you don't know how to talk"
+    },
+    {
+      "id": 13,
+      "template": "I [did action] every day for [X] days this is what happened.",
+      "original_example": "I took creatine everyday for 30 days this is what happened"
+    },
+    {
+      "id": 14,
+      "template": "If I woke up [in undesirable state] tomorrow and wanted to [get result] [in time], here's exactly what I'd do.",
+      "original_example": "If i woke up 30lbs overweight tomorrow and wanted to lose it all by summer here's exactly what i do"
+    },
+    {
+      "id": 15,
+      "template": "There's one habit silently destroying your [——], and it has nothing to do with how [well you do an action]",
+      "original_example": "There's one habit silently destroying your workouts, and it has nothing to do with how hard you train"
+    },
+    {
+      "id": 16,
+      "template": "There is absolutely no reason for you to be [doing common action] every single day just because you think you have to [desired goal]",
+      "original_example": "there is absolutely no reason for you to be eating chicken, rice and broccoli every single day just because you think you have to lose weight"
+    },
+    {
+      "id": 17,
+      "template": "Here's what [elite people] don't want you to know about your [topic]",
+      "original_example": "Here's what rich kids don't want you to know about your career"
+    },
+    {
+      "id": 18,
+      "template": "If you're going to make your first [results], it's not going to come from [popular method] and that's something that people don't get",
+      "original_example": "If you're going to make your first $100K it's not going to come from investing, and that's something that people don't get"
+    },
+    {
+      "id": 19,
+      "template": "If you don't take this extra step in your [—], you're going to mess up [important outcome]",
+      "original_example": "If you don't take this extra step in your Roth IRA you're going to mess up your retirement"
+    },
+    {
+      "id": 20,
+      "template": "A [study from a respected source] just found out that [shocking statistic] but here's what they didn't tell you",
+      "original_example": "A Harvard study just found out that 82% of women would reject a six figure earner on dating apps but here's what they didn't tell you"
+    },
+    {
+      "id": 21,
+      "template": "I don't know who needs to hear this, but your [——] aren't [getting results] because your [——] sucks",
+      "original_example": "I don't know who needs to hear this, but your videos aren't getting any views because your storytelling sucks."
+    },
+    {
+      "id": 22,
+      "template": "Here's how I make my [affordable thing] look like an [expensive thing].",
+      "original_example": "Here's how I make my iPhone footage look like my $5000 sony camera"
+    },
+    {
+      "id": 23,
+      "template": "I shouldn't be giving this away for free, but here's how to steal [—— for yourself] in under [X] seconds using [tool]",
+      "original_example": "I shouldn't be giving this away for free but here's how to steal any cinematic color grade and apply it to your own video in under 60 seconds using AI"
+    },
+    {
+      "id": 24,
+      "template": "Professional [occupation] here, give me [X] seconds and I'll tell you how to [skill] and it'll save you a fucking [——] degree",
+      "original_example": "Professional editor here, give me 60 seconds and I'll tell you how to edit your videos and it'll save you a fucking film degree"
+    },
+    {
+      "id": 25,
+      "template": "This is how to [desirable goal] without actually having to [do difficult task].",
+      "original_example": "This is how to get paid to exist without actually having to go viral"
+    },
+    {
+      "id": 26,
+      "template": "The easiest way to [cause negative outcome] is to [——]",
+      "original_example": "The easiest way to turn off wealthy clients is to sound like you're unsure of your value"
+    },
+    {
+      "id": 27,
+      "template": "what if I told you that you can [do small action] and potentially [multiply] your [results]? let me show you",
+      "original_example": "what if I told you that you can copy and paste a little piece of code onto your website and potentially triple your revenue? Let me show you"
+    },
+    {
+      "id": 28,
+      "template": "In the next 60 seconds, I'm going to show you how to see [desirable information]",
+      "original_example": "In the next 60 seconds, I'm going to show you how to see everything your competition is up to"
+    },
+    {
+      "id": 29,
+      "template": "Heres how you turn [small number of thing] into [bigger number of thing]",
+      "original_example": "Heres how you turn 1k followers into 10k followers"
+    },
+    {
+      "id": 30,
+      "template": "top [X ——] you're sleeping on. Wake yo ass up",
+      "original_example": "top 5 instagram updates you're sleeping on. Wake yo ass up"
+    },
+    {
+      "id": 31,
+      "template": "Here's a decade-plus of [niche] lessons, summarized in 60 seconds",
+      "original_example": "Here's a decade-plus of business lessons, summarized in 60 seconds"
+    },
+    {
+      "id": 32,
+      "template": "The reason you can't [create desirable result] and [get desirable outcome] you keep talking about is because…",
+      "original_example": "The reason you can't fill out your jeans and get that fat ass you keep talking about is because…"
+    },
+    {
+      "id": 33,
+      "template": "Don't tell me [common excuse/complaint]",
+      "original_example": "Don't tell me eating healthy is too expensive"
+    },
+    {
+      "id": 34,
+      "template": "You don't need [positive trait] to [achieve desirable outcome]",
+      "original_example": "You don't need discipline to lose weight"
+    },
+    {
+      "id": 35,
+      "template": "Nothing quite says I'm gonna be [funny desirable outcome] quite like [doing action]",
+      "original_example": "Nothing quite says I'm gonna be fuckable, every day of the summer, quite like hitting a daily protein goal"
+    },
+    {
+      "id": 36,
+      "template": "What if I told you this [thing] could [get you a measurable result]",
+      "original_example": "What if I told you this berry could take 12 minutes off your marathon time"
+    },
+    {
+      "id": 37,
+      "template": "This is how to turn your [——] into a [results] machine",
+      "original_example": "This is how to turn your body into a fat burning machine"
+    },
+    {
+      "id": 38,
+      "template": "Everyone tells you to [popular advice], but no one actually shows you how to do it. Here's a [X] seconds [guide] that you can save",
+      "original_example": "Everyone tells you to invest in a Roth IRA in 2025, but no one shows you how to actually do it. Here's a 45 second tutorial that you can save"
+    },
+    {
+      "id": 39,
+      "template": "Remember [unknown, simple-sounding concept] for your next [——]",
+      "original_example": "Remember light-light-dark for your next outfit"
+    },
+    {
+      "id": 40,
+      "template": "Here's the one thing that [desirable trait] people do completely differently to [normal or undesirable trait] people",
+      "original_example": "Here's the one thing that rich people do completely differently to middle-class and poor people"
+    },
+    {
+      "id": 41,
+      "template": "All it takes is [X] hours per week to completely change your [———] and I'll prove it to you in [X] seconds",
+      "original_example": "All it takes is 4 hours per week to completely change your body and I'll prove it to you in 90 seconds"
+    },
+    {
+      "id": 42,
+      "template": "It took me [X] years to master [a skill], but I'm going to teach you the [X] most powerful lessons in the next [X] seconds",
+      "original_example": "It took me 5 years to master my communication, but I'm going to teach you the 5 most powerful lessons in the next 60 seconds"
+    },
+    {
+      "id": 43,
+      "template": "Here's a dirty little secret [industry experts] don't want you to know",
+      "original_example": "Here's a dirty little secret prompt engineers don't want you to know"
+    },
+    {
+      "id": 44,
+      "template": "[X] [things] that rarely fail, so you can steal their homework",
+      "original_example": "6 business that rarely fail, so you can steal their homework"
+    },
+    {
+      "id": 45,
+      "template": "For the love of god, whatever you do [in situation] do not forget to [use unknown tactic/technique]",
+      "original_example": "For the love of god, whatever you do during the interview process do not forget to ask \"the higher performer question\""
+    },
+    {
+      "id": 46,
+      "template": "Do you want [popular desire] or do you want [true desire]?",
+      "original_example": "Do you want to lose weight? Or do you want to lose fat?"
+    },
+    {
+      "id": 47,
+      "template": "I'm gonna take you from [topic] beginner to expert with my [X] step framework",
+      "original_example": "I'm gonna take you from ChatGPT beginner to expert with my 4 step framework"
+    },
+    {
+      "id": 48,
+      "template": "One of the biggest scams in [niche] is [popular thing]",
+      "original_example": "One of the biggest scams in real estate is a will"
+    },
+    {
+      "id": 49,
+      "template": "I've spent [X hours testing different methods]. Don't waste your time, here's the [X] that've actually [given me a benefit]",
+      "original_example": "I've spent 100s of hours using different chat GPT prompts. Don't waste your time, here's the 3 that've actually saved me time"
+    },
+    {
+      "id": 50,
+      "template": "I've [listened to] over [X] [content-types] on [topic]. 50% pretty useless, 25% were just wrong, but [X] really changed how I think about [your niche] forever",
+      "original_example": "I've listened to over 1000 podcasts on making money. 50% pretty useless, 25% were just wrong, but 11 really changed how I think about finance forever"
+    }
+  ]
+}

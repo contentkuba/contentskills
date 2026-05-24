@@ -1,0 +1,89 @@
+{
+  "_instructions": "Platform-specific format rules and preferences. Platform writer skills read the relevant section to apply correct formatting, length, hashtag strategy, and posting cadence. Override defaults here if your approach differs from the platform norm.",
+
+  "platform_settings": {
+
+    "linkedin": {
+      "active": "[true OR false]",
+      "post_frequency": "[e.g. '3x per week' OR 'daily' OR '2x per week']",
+      "tone_vs_brand_default": "[same / slightly more formal / slightly more casual]",
+      "line_breaks": "after almost every sentence — LinkedIn compresses walls of text",
+      "max_sentences_per_visual_line": 2,
+      "hashtags": {
+        "use": "[true OR false]",
+        "count": "[0–3 max recommended]",
+        "placement": "[end of post / first comment]",
+        "strategy": "[e.g. 'niche-specific only, no generic tags like #motivation']"
+      },
+      "preferred_post_length": "[short under 150w / medium 150–300w / long 300–700w / mix]",
+      "preferred_formats": ["[FORMAT 1 — e.g. personal story]", "[FORMAT 2 — e.g. contrarian take]", "[FORMAT 3]"],
+      "link_handling": "links suppress reach — put in first comment, not post body",
+      "best_posting_times": "[e.g. 'Tue–Thu, 7–9am or 12–2pm in audience timezone']"
+    },
+
+    "instagram": {
+      "active": "[true OR false]",
+      "post_frequency": "[e.g. '4x per week']",
+      "tone_vs_brand_default": "[same / warmer / more visual]",
+      "caption_length": {
+        "feed": "[short under 50w / medium 50–150w / long 150–300w]",
+        "reel": "[short 1–3 lines / medium / same as feed]",
+        "carousel": "[short hook only / medium]"
+      },
+      "hashtags": {
+        "use": "[true OR false]",
+        "count": "[3–10 recommended]",
+        "placement": "[end of caption / first comment]",
+        "mix": "[1–2 large 1M+, 3–5 medium 50K–500K, 2–3 niche under 50K]"
+      },
+      "emojis": "[never / sparingly / frequently]",
+      "best_posting_times": "[e.g. 'Mon/Wed/Fri 9–11am, Tue/Thu 6–8pm']"
+    },
+
+    "x_twitter": {
+      "active": "[true OR false]",
+      "post_frequency": "[e.g. 'daily' OR '5x per week']",
+      "tone_vs_brand_default": "[same / faster and punchier / more reactive]",
+      "character_limit": 280,
+      "thread_use": "[yes / no / occasionally]",
+      "preferred_formats": ["[FORMAT 1 — e.g. single punchy take]", "[FORMAT 2 — e.g. numbered thread]"],
+      "best_posting_times": "[e.g. 'Mon–Fri 8–10am, 12–2pm']"
+    },
+
+    "threads": {
+      "active": "[true OR false]",
+      "tone_vs_brand_default": "[same as X / warmer / more community-feel]",
+      "character_limit": 500,
+      "post_frequency": "[e.g. 'same as X posts, adapted' OR '3x per week standalone']"
+    },
+
+    "newsletter": {
+      "active": "[true OR false]",
+      "platform": "[Beehiiv / Substack / Mailchimp / Kit / other]",
+      "send_frequency": "[e.g. 'weekly' OR 'bi-weekly']",
+      "send_day_time": "[e.g. 'Tuesday 8am audience timezone']",
+      "default_format": "[essay / how-to / curated roundup / story+lesson / mix]",
+      "average_length": "[e.g. '400–600 words' OR '800–1200 words']",
+      "subject_line_style": "[curiosity / specific claim / personal / question]",
+      "list_size": "[OPTIONAL — helps calibrate CTAs and tone]"
+    },
+
+    "youtube": {
+      "active": "[true OR false]",
+      "upload_frequency": "[e.g. 'weekly' OR '2x per month']",
+      "target_video_length_minutes": "[e.g. '8–12']",
+      "shorts_active": "[true OR false]",
+      "tone_vs_brand_default": "[same / slightly more educational / warmer on camera]",
+      "chapters": "[always / for videos over 8 min / never]",
+      "best_upload_day": "[e.g. 'Tuesday or Wednesday']"
+    },
+
+    "blog": {
+      "active": "[true OR false]",
+      "publish_frequency": "[e.g. 'bi-weekly' OR 'monthly']",
+      "primary_goal": "[SEO / thought leadership / both]",
+      "average_target_length": "[e.g. '1200–1800 words']",
+      "cms": "[WordPress / Webflow / Ghost / Substack / other]"
+    }
+  }
+}

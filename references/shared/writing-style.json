@@ -1,0 +1,37 @@
+{
+  "_instructions": "Defines how content is written across all formats. Platform-specific overrides (LinkedIn line breaks, Instagram caption length, etc.) live in platform-settings.json. This file covers the universal writing DNA.",
+
+  "writing_style": {
+    "sentence_length": "[DESCRIBE — e.g. 'short punchy hook lines followed by slightly longer explanatory sentences. Nothing over 20 words per sentence.' OR 'consistently short and clipped throughout — sounds like thinking out loud' OR 'varied: short for hooks and emphasis, medium for explanation, never long']",
+
+    "paragraph_structure": "[DESCRIBE — e.g. '1–3 sentences per paragraph. Each paragraph lands one idea before moving on.' OR '2–4 sentences. Moderate pacing.' OR 'single sentences as paragraphs for emphasis, grouped ideas in 2–3 line blocks']",
+
+    "use_of_questions": {
+      "enabled": "[true OR false]",
+      "style": "[DESCRIBE IF TRUE — e.g. 'rhetorical questions mid-post to create pause' OR 'direct questions at the end to invite discussion' OR 'never used']"
+    },
+
+    "use_of_lists": {
+      "enabled": "[true OR false]",
+      "style": "[DESCRIBE IF TRUE — e.g. 'numbered lists for step-by-step frameworks' OR 'bullet points rarely — only when items are genuinely parallel' OR 'inline lists only, not bullet formatted']"
+    },
+
+    "use_of_bold": {
+      "enabled": "[true OR false]",
+      "style": "[DESCRIBE IF TRUE — e.g. 'bold only for the single most important phrase per section' OR 'never used' OR 'used for key terms and mechanism names']"
+    },
+
+    "jargon": "[embrace it / explain it / avoid it — and describe which specific terms are in-vocabulary vs. out]",
+
+    "storytelling_arc": "[DESCRIBE NARRATIVE STRUCTURE — e.g. 'hook (bold claim) → tension (what most people get wrong) → reframe (what actually works) → proof (one example or result) → CTA' OR 'problem → stakes → mechanism → outcome → CTA' OR 'story open → universal lesson → practical system → CTA']",
+
+    "contrarian_approach": {
+      "enabled": "[true OR false]",
+      "style": "[DESCRIBE IF TRUE — e.g. 'names and challenges common bad advice directly, with evidence' OR 'frames as alternative perspective rather than direct attack']"
+    },
+
+    "specificity_standard": "[DESCRIBE — e.g. 'always name the mechanism, not just the outcome. Always include one concrete example per post. Never make a claim without a real situation behind it.' OR 'minimum: one specific number or timeframe per piece. Maximum: one anecdote per section.']",
+
+    "pacing_notes": "[DESCRIBE — e.g. 'front-load the value. Never bury the lead. The first paragraph earns the second.' OR 'build tension slowly then resolve fast' OR 'fast open, slower middle with depth, sharp close']"
+  }
+}

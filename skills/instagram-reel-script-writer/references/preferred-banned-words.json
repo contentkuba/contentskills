@@ -1,0 +1,32 @@
+{
+  "preferred_words": [
+    "[WORD/PHRASE 1 — vocabulary the creator uses naturally on camera, e.g. 'system']",
+    "[WORD/PHRASE 2 — e.g. 'mechanism']",
+    "[WORD/PHRASE 3 — e.g. 'framework']",
+    "[WORD/PHRASE 4 — e.g. 'extraction']",
+    "[WORD/PHRASE 5 — e.g. 'pipeline']",
+    "[WORD/PHRASE 6 — e.g. 'signal']",
+    "[WORD/PHRASE 7 — e.g. 'practitioner']",
+    "[WORD/PHRASE 8 — e.g. 'specificity']",
+    "[WORD/PHRASE 9 — e.g. 'execution']",
+    "[WORD/PHRASE 10 — e.g. 'authority']",
+    "[add more — aim for 15–30 words/phrases that feel distinctly like this creator's spoken vocabulary]"
+  ],
+  "banned_words": [
+    "[BANNED WORD/PHRASE 1 — words the creator would never say on camera, e.g. 'hustle']",
+    "[BANNED WORD/PHRASE 2 — e.g. 'grind']",
+    "[BANNED WORD/PHRASE 3 — e.g. 'crushing it']",
+    "[BANNED WORD/PHRASE 4 — e.g. 'hack']",
+    "[BANNED WORD/PHRASE 5 — e.g. 'secret']",
+    "[BANNED WORD/PHRASE 6 — e.g. 'thought leader']",
+    "[BANNED WORD/PHRASE 7 — e.g. 'guru']",
+    "[BANNED WORD/PHRASE 8 — e.g. 'game-changer']",
+    "[BANNED WORD/PHRASE 9 — e.g. 'synergy']",
+    "[BANNED WORD/PHRASE 10 — e.g. 'disrupting']",
+    "[BANNED PHRASE 11 — e.g. 'changes the equation']",
+    "[BANNED PHRASE 12 — e.g. 'at scale']",
+    "[add more — the banned list is often as important as the preferred list. Pull from real speech patterns.]"
+  ],
+
+  "_instructions": "Preferred words should reflect the creator's actual spoken vocabulary — terms they use naturally on camera and in their written content. Banned words are ones they'd cringe at hearing in their own Reel. Both lists help Claude avoid the generic LinkedIn thought-leader voice bleeding into video scripts. Pull these directly from the creator's existing Reels and LinkedIn posts."
+}

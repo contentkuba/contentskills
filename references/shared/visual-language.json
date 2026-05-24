@@ -1,0 +1,68 @@
+{
+  "_instructions": "Visual identity for video and graphic content. Read by instagram-reel-script-writer, instagram-caption-writer (for carousel visual notes), infographic-designer, and carousel-copy-writer. Defines the creator's real shooting environments, B-roll universe, on-screen text style, and editing rhythm.",
+
+  "visual_language": {
+
+    "talking_head_setups": [
+      "[SETUP 1 — e.g. 'Direct to camera, desk background (laptop + minimal setup visible)']",
+      "[SETUP 2 — e.g. 'Walking and talking outdoors — conveys thinking-in-motion, less polished = more credible']",
+      "[SETUP 3 — e.g. 'Standing at whiteboard or notebook for framework explanations']"
+    ],
+
+    "broll_categories": {
+      "screen_content": [
+        "[SCREEN B-ROLL 1 — e.g. 'AI tool interface with prompt visible']",
+        "[SCREEN B-ROLL 2 — e.g. 'LinkedIn post draft or client content draft on screen']",
+        "[SCREEN B-ROLL 3 — e.g. 'Analytics dashboard']",
+        "[SCREEN B-ROLL 4 — e.g. 'DM thread (blurred names) showing a response']"
+      ],
+      "hands_and_objects": [
+        "[HANDS B-ROLL 1 — e.g. 'Typing at laptop — tight shot, just hands']",
+        "[HANDS B-ROLL 2 — e.g. 'Writing in a notebook — framework sketch, bullet list']",
+        "[HANDS B-ROLL 3 — e.g. 'Scrolling phone — LinkedIn feed, DMs']"
+      ],
+      "environmental": [
+        "[ENV B-ROLL 1 — e.g. 'Over-shoulder at screen (establishes work context)']",
+        "[ENV B-ROLL 2 — e.g. 'Wide shot of desk setup (used once for establishing shot)']"
+      ]
+    },
+
+    "on_screen_text": {
+      "style": "[DESCRIBE TEXT STYLE — e.g. 'Bold, clean typeface. White text on dark bar, or large centre text on key phrases.' OR 'Minimal — single word or short phrase, high contrast']",
+      "what_to_show": "[DESCRIBE — e.g. 'The mechanism name, the number, or the contrarian claim. Never subtitles. Never transcription.' OR 'Key word only — appears for 1.5–3 seconds per phrase']",
+      "what_not_to_show": "[e.g. 'Do not transcribe what is being said. No decorative or handwritten fonts. No emojis unless creator requests.']",
+      "capitalisation": "[ALL CAPS for emphasis / Title Case / lowercase]"
+    },
+
+    "editing_rhythm": {
+      "talking_head_cut_frequency": "[e.g. 'Jump cut every 3–5 seconds' OR 'Slower cuts — 5–8 seconds — for a more authoritative feel']",
+      "broll_timing": "[e.g. 'B-roll timed to spoken emphasis — cut to screen recording when naming the tool or result']",
+      "transitions": "[e.g. 'Clean cuts only. No swipes, fades, or zoom effects.' OR 'No unnecessary transitions']",
+      "music": "[e.g. 'Lo-fi ambient or none — never trending audio that pulls focus' OR 'No music — silence reads as confidence' OR 'Subtle instrumental only']"
+    },
+
+    "carousel_design_notes": {
+      "slide_dimensions": "[e.g. '1080x1350px for Instagram, 1200x1584px for LinkedIn PDF']",
+      "color_palette": ["[PRIMARY COLOR HEX]", "[SECONDARY COLOR HEX]", "[ACCENT COLOR HEX]"],
+      "fonts": {
+        "headline": "[FONT NAME]",
+        "body": "[FONT NAME]"
+      },
+      "slide_style": "[DESCRIBE — e.g. 'Dark background with white text and single accent color for numbers. Minimal. No stock imagery.' OR 'Clean white with bold typography and accent blocks']"
+    },
+
+    "infographic_style": {
+      "preferred_types": ["[e.g. 'list / tips']", "[e.g. 'process / steps']", "[e.g. 'comparison']"],
+      "color_approach": "[e.g. 'On-brand palette only. No gradients. High contrast.' OR 'Minimal — 2 colors max per infographic']",
+      "icon_style": "[e.g. 'Line icons only. No filled or cartoon icons.' OR 'No icons — text-only with strong typography']"
+    },
+
+    "what_not_to_suggest": [
+      "Stock footage of diverse teams smiling at laptops",
+      "Trending audio that doesn't fit the brand",
+      "Filters or AR effects",
+      "Zoom transitions or whip cuts for dramatic effect",
+      "[ADD BRAND-SPECIFIC VISUAL DON'T 1]"
+    ]
+  }
+}

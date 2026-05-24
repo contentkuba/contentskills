@@ -1,0 +1,52 @@
+{
+  "visual_language": {
+
+    "primary_talking_head_setups": [
+      "[SETUP 1 — e.g. 'Direct to camera, desk background (laptop + minimal setup visible)']",
+      "[SETUP 2 — e.g. 'Walking and talking outdoors (conveys thinking-in-motion, less polished = more credible)']",
+      "[SETUP 3 — e.g. 'Standing at whiteboard or notebook (for framework or system explanations)']",
+      "[Add or remove based on the creator's real shooting environments]"
+    ],
+
+    "broll_categories": {
+      "screen_content": [
+        "[SCREEN B-ROLL 1 — e.g. 'AI tool interface (Claude, ChatGPT prompt visible)']",
+        "[SCREEN B-ROLL 2 — e.g. 'LinkedIn post draft or client content draft on screen']",
+        "[SCREEN B-ROLL 3 — e.g. 'Analytics dashboard (traffic, engagement, AI bot hits)']",
+        "[SCREEN B-ROLL 4 — e.g. 'DM thread (blurred names) showing a keyword trigger response']",
+        "[Add or remove based on what the creator actually works with on screen]"
+      ],
+      "hands_and_objects": [
+        "[HANDS B-ROLL 1 — e.g. 'Typing at laptop — tight shot, just hands']",
+        "[HANDS B-ROLL 2 — e.g. 'Writing in a notebook — framework sketch, bullet list']",
+        "[HANDS B-ROLL 3 — e.g. 'Scrolling phone — LinkedIn feed, DMs']",
+        "[Add more based on the creator's actual physical environment]"
+      ],
+      "environmental_context": [
+        "[ENV B-ROLL 1 — e.g. 'Over-shoulder at screen (establishes work context without full face)']",
+        "[ENV B-ROLL 2 — e.g. 'Wide shot of desk setup (used once for establishing authority environment)']",
+        "[ENV B-ROLL 3 — e.g. 'Blurred background with sharp talking head (cinematic depth — for key point delivery)']"
+      ]
+    },
+
+    "on_screen_text_rules": {
+      "style": "[DESCRIBE TEXT STYLE — e.g. 'Bold, clean typeface — no decorative fonts . white text on dark background bar, or large center text on key phrases' OR 'Minimal . single word or short phrase . high contrast']",
+      "what_to_show": "[DESCRIBE WHAT GOES ON SCREEN — e.g. 'The mechanism name, the number, or the contrarian claim . Never subtitles . Never transcription' OR 'Key word only — appears for 1.5–3 seconds per phrase']",
+      "what_not_to_show": "[e.g. 'Do not transcribe what is being said . Do not use decorative or handwritten fonts . Do not add emojis unless the creator specifically requests it']"
+    },
+
+    "editing_rhythm": {
+      "talking_head_cut_frequency": "[e.g. 'Jump cut every 3–5 seconds on talking head' OR 'Slower cuts — 5–8 seconds — for a more deliberate, authoritative feel']",
+      "broll_cut_timing": "[e.g. 'B-roll cuts timed to spoken emphasis — cut to screen recording when naming the tool or result' OR 'B-roll used sparingly — only when it adds proof or context the talking head cannot']",
+      "transitions": "[e.g. 'No unnecessary transitions (no swipes, fades, or zoom effects unless intentional)' OR 'Clean cuts only']",
+      "music": "[e.g. 'Lo-fi ambient or none — never trending audio that pulls focus' OR 'No music — silence reads as confidence for this audience' OR 'Subtle instrumental only']"
+    },
+
+    "what_not_to_suggest": [
+      "[VISUAL DON'T 1 — e.g. 'No stock footage of diverse teams smiling at laptops']",
+      "[VISUAL DON'T 2 — e.g. 'No trending audio that doesn't fit the brand']",
+      "[VISUAL DON'T 3 — e.g. 'No filters or AR effects']",
+      "[VISUAL DON'T 4 — e.g. 'No zoom transitions or whip cuts for dramatic effect']"
+    ]
+  }
+}

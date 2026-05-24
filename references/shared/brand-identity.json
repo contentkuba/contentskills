@@ -1,0 +1,50 @@
+{
+  "_instructions": "Brand positioning, offer context, and identity signals. Read by brand-voice, lead-magnet, case-study, testimonial-extractor, and launch-content-planner. Gives those skills the business context they need beyond voice alone.",
+
+  "brand_identity": {
+    "brand_name": "[YOUR BRAND OR CREATOR NAME]",
+    "tagline": "[OPTIONAL — a short phrase that captures your positioning]",
+    "website": "[URL]",
+
+    "what_you_do": "[ONE SENTENCE — your offer or service, plain language]",
+    "who_you_serve": "[SPECIFIC AUDIENCE — mirror audience.json primary but from your POV]",
+    "primary_outcome_you_deliver": "[THE RESULT A CLIENT/CUSTOMER GETS — specific and measurable where possible]",
+
+    "offers": [
+      {
+        "name": "[OFFER NAME 1]",
+        "type": "[service / product / course / community / tool]",
+        "one_liner": "[WHAT IT IS IN ONE SENTENCE]",
+        "price_range": "[OPTIONAL]",
+        "cta": "[THE SPECIFIC CTA FOR THIS OFFER — e.g. 'DM me SYSTEM' or 'Book a call at URL']"
+      },
+      {
+        "name": "[OFFER NAME 2]",
+        "type": "",
+        "one_liner": "",
+        "price_range": "",
+        "cta": ""
+      }
+    ],
+
+    "content_mission": "[ONE SENTENCE — who the content is for, what it does for them, how it's different. Format: 'We create [format] for [audience] who [situation], so they can [outcome] — without [common alternative that doesn't work].']",
+
+    "positioning": {
+      "category": "[WHAT CATEGORY YOU COMPETE IN — e.g. 'B2B content strategy' OR 'AI writing tools' OR 'executive coaching']",
+      "differentiation": "[WHAT MAKES YOU DIFFERENT FROM OTHERS IN THIS CATEGORY]",
+      "against": "[WHAT COMMON APPROACH, ADVICE, OR COMPETITOR YOU POSITION AGAINST — not as an attack, but as context]"
+    },
+
+    "social_proof": {
+      "notable_results": [
+        "[RESULT 1 — specific and real, e.g. '4,200 newsletter subscribers in 90 days for a solo founder']",
+        "[RESULT 2]",
+        "[RESULT 3]"
+      ],
+      "notable_clients_or_logos": [
+        "[CLIENT/COMPANY 1 — use 'a Series A SaaS founder' style if you prefer not to name]",
+        "[CLIENT/COMPANY 2]"
+      ]
+    }
+  }
+}

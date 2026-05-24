@@ -1,0 +1,75 @@
+{
+  "description": "A curated database of Reel scripts used as style, structure, and pacing references. Each entry contains the full script broken into hook, beats, and CTA (verbatim or closely paraphrased), plus format, pillar, and production notes. The more real examples added here, the better Claude will match the creator's on-camera voice and rhythm.",
+
+  "reel_formats": [
+    "hot_take",
+    "builder_story",
+    "mini_system",
+    "myth_buster",
+    "result_reveal",
+    "proof_story",
+    "direct_challenge",
+    "[ADD MORE FORMATS if this creator has recurring Reel structures not captured above]"
+  ],
+
+  "examples": [
+    {
+      "id": "reel-001",
+      "format": "[FORMAT — pick from reel_formats above]",
+      "pillar": "[PILLAR — match to one of the pillars in content-pillars.json]",
+      "hook": "[HOOK LINE — copy verbatim from the real script or video transcript]",
+      "beats": [
+        {
+          "beat": 1,
+          "verbal": "[SPOKEN LINE(S) — copy verbatim, preserve spoken rhythm]",
+          "on_screen_text": "[KEY PHRASE shown on screen, or empty string if none]",
+          "shot": "[SHOT DESCRIPTION — e.g. 'direct to camera, desk setup']"
+        },
+        {
+          "beat": 2,
+          "verbal": "[SPOKEN LINE(S)]",
+          "on_screen_text": "[KEY PHRASE or empty]",
+          "shot": "[SHOT OR B-ROLL DESCRIPTION]"
+        }
+      ],
+      "cta": "[VERBAL CTA — copy verbatim]",
+      "cta_on_screen": "[ON-SCREEN CTA TEXT, or empty if none]",
+      "estimated_runtime_seconds": "[NUMBER]",
+      "performance_notes": "[OPTIONAL — e.g. 'high saves, 200+ DMs' or leave empty]",
+      "what_works": "[OPTIONAL — e.g. 'fact bomb hook, practitioner positioning, keyword trigger CTA']",
+      "structure_notes": "[OPTIONAL — e.g. 'tension in hook, reframe at beat 2, mechanism named at beat 3']"
+    },
+    {
+      "id": "reel-002",
+      "format": "[FORMAT]",
+      "pillar": "[PILLAR]",
+      "hook": "[HOOK LINE]",
+      "beats": [],
+      "cta": "[CTA]",
+      "cta_on_screen": "",
+      "estimated_runtime_seconds": "",
+      "performance_notes": "",
+      "what_works": "",
+      "structure_notes": ""
+    },
+    {
+      "_instructions": "Add a minimum of 5 real scripts. 10–15 is ideal. Include variety across formats and pillars. The Proof Story format (real client result + mechanism) should appear at least twice — it is the highest-credibility format and drives the most saves and DM sends. Delete this object when you've filled in real examples."
+    }
+  ],
+
+  "hooks_library": [
+    "[HOOK 1 — copy verbatim from a real Reel's opening line]",
+    "[HOOK 2]",
+    "[HOOK 3]",
+    "[HOOK 4]",
+    "[HOOK 5]",
+    "[Add as many as you have — this is what Claude samples from when writing new hooks. Include the first-3-second visual context if useful.]"
+  ],
+
+  "cta_library": [
+    "[CTA 1 — copy verbatim from a real Reel's closing CTA]",
+    "[CTA 2]",
+    "[CTA 3]",
+    "[Add as many as you have — these are the actual CTAs Claude will use or adapt. Include the keyword trigger word if applicable.]"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "_instructions": "Hard rules for all content across all formats. Skills read this before writing and check against it before delivering. Adapt the examples to match the creator's specific aversions — these defaults are a strong starting point.",
+
+  "dos": [
+    "Open with the most surprising, specific, or counterintuitive element — never with context-setting.",
+    "Ground every piece in one concrete practitioner moment: a real client situation, a specific experiment, a named system.",
+    "Name the audience explicitly at least once. Specificity attracts the right people. Vagueness attracts no one.",
+    "Write for the ear as much as the eye — read every piece aloud. If it sounds like a caption being read, rewrite it.",
+    "Use on-screen text, bold, or formatting to emphasise the sharpest phrase per section — the mechanism name, the number, the contrarian claim.",
+    "Keep each piece to one idea. One tension, one resolution.",
+    "Position as the practitioner who fixed the problem — not the observer who noticed it.",
+    "End with a single, low-friction CTA matched to the relationship level.",
+    "Suggest examples, B-roll, and visuals that are authentic to the creator's real environment — not stock content energy.",
+    "Grammar and spell check everything. An error in a content-quality brand destroys the premise before the idea lands.",
+    "[ADD BRAND-SPECIFIC DO 1]",
+    "[ADD BRAND-SPECIFIC DO 2]"
+  ],
+
+  "donts": [
+    "Don't write passive observer hooks: 'I noticed...', 'I ran X through Y...' — no tension, no stakes.",
+    "Don't open with slow context-setting or generic industry observations.",
+    "Don't try to cover more than one idea per post or video.",
+    "Don't stack multiple CTAs — pick one.",
+    "Don't suggest trending audio, filters, stock footage, or gimmicks.",
+    "Don't add motivational sign-offs, engagement-bait questions, or 'drop a comment if you agree'.",
+    "Don't use a vague 'you' — always name the specific type of person being addressed.",
+    "Don't invent client names, statistics, or results the creator didn't provide.",
+    "Don't write sentences that sound like AI-generated thought leadership ('In today's fast-paced world...').",
+    "Don't pad to a word count — write until the point is made, then stop.",
+    "[ADD BRAND-SPECIFIC DON'T 1]",
+    "[ADD BRAND-SPECIFIC DON'T 2]"
+  ]
+}

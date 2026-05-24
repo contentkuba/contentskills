@@ -1,0 +1,60 @@
+{
+  "_instructions": "The recurring topics that all content maps back to. Skills use this to check pillar balance in calendars, match new ideas to existing positioning, and avoid content drift. Aim for 5–8 pillars. Make them specific to your genuine expertise — not generic content categories.",
+
+  "content_pillars": [
+    {
+      "id": "pillar-1",
+      "name": "[PILLAR NAME — e.g. 'AI-powered content systems']",
+      "themes": ["[THEME 1]", "[THEME 2]", "[THEME 3]"],
+      "audience_problem": "[THE AUDIENCE PROBLEM THIS PILLAR ADDRESSES]",
+      "brand_signal": "[WHAT THIS PILLAR SIGNALS ABOUT YOUR EXPERTISE]",
+      "best_formats": ["[FORMAT 1 — e.g. carousel]", "[FORMAT 2 — e.g. how-to post]"],
+      "example_angles": [
+        "[EXAMPLE CONTENT ANGLE 1]",
+        "[EXAMPLE CONTENT ANGLE 2]"
+      ]
+    },
+    {
+      "id": "pillar-2",
+      "name": "[PILLAR NAME]",
+      "themes": [],
+      "audience_problem": "",
+      "brand_signal": "",
+      "best_formats": [],
+      "example_angles": []
+    },
+    {
+      "id": "pillar-3",
+      "name": "[PILLAR NAME]",
+      "themes": [],
+      "audience_problem": "",
+      "brand_signal": "",
+      "best_formats": [],
+      "example_angles": []
+    },
+    {
+      "id": "pillar-4",
+      "name": "[PILLAR NAME]",
+      "themes": [],
+      "audience_problem": "",
+      "brand_signal": "",
+      "best_formats": [],
+      "example_angles": []
+    },
+    {
+      "id": "pillar-5",
+      "name": "[PILLAR NAME]",
+      "themes": [],
+      "audience_problem": "",
+      "brand_signal": "",
+      "best_formats": [],
+      "example_angles": []
+    }
+  ],
+
+  "pillar_mix_rules": {
+    "proof_story_frequency": "[HOW OFTEN — e.g. 'at least 1 in every 5 posts — highest credibility format']",
+    "educational_vs_story_ratio": "[e.g. '60% educational, 25% story/builder, 15% promotional']",
+    "avoid_stacking": "[e.g. 'never post the same pillar twice in a row']"
+  }
+}

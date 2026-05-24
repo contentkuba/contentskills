@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Skills Setup Wizard</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f5f5f3;
+  --color-border: rgba(0,0,0,0.12);
+  --color-border-strong: rgba(0,0,0,0.22);
+  --color-text: #1a1a18;
+  --color-text-secondary: #6b6b67;
+  --color-text-tertiary: #9b9b97;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "SF Mono", "Fira Code", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1a18;
+    --color-bg-secondary: #232321;
+    --color-border: rgba(255,255,255,0.1);
+    --color-border-strong: rgba(255,255,255,0.2);
+    --color-text: #f0f0ec;
+    --color-text-secondary: #a0a09c;
+    --color-text-tertiary: #6b6b67;
+  }
+}
+
+body {
+  font-family: var(--font);
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem 4rem;
+}
+
+#app { width: 100%; max-width: 620px; }
+
+.wordmark {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-tertiary);
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.phase-bar { display: flex; gap: 5px; margin-bottom: 0.5rem; }
+.phase-dot {
+  flex: 1; height: 2px; border-radius: 2px;
+  background: var(--color-border);
+  transition: background 0.3s;
+}
+.phase-dot.done { background: var(--color-text); }
+.phase-dot.active { background: var(--color-text-secondary); }
+
+.phase-label {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  margin-bottom: 1.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.chat-window {
+  background: var(--color-bg);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  margin-bottom: 0.75rem;
+  min-height: 200px;
+  max-height: 420px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-behavior: smooth;
+}
+
+.msg { display: flex; gap: 10px; align-items: flex-start; }
+.msg.user { flex-direction: row-reverse; }
+
+.avatar {
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--color-bg-secondary);
+  border: 0.5px solid var(--color-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 500;
+  color: var(--color-text-secondary);
+  flex-shrink: 0; margin-top: 2px;
+}
+
+.bubble {
+  max-width: 84%;
+  padding: 9px 13px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+.msg.ai .bubble {
+  background: var(--color-bg-secondary);
+  border: 0.5px solid var(--color-border);
+  border-radius: 4px var(--radius-lg) var(--radius-lg) var(--radius-lg);
+}
+.msg.user .bubble {
+  background: var(--color-bg);
+  border: 0.5px solid var(--color-border-strong);
+  border-radius: var(--radius-lg) 4px var(--radius-lg) var(--radius-lg);
+}
+
+.typing { display: flex; gap: 4px; align-items: center; padding: 9px 13px; }
+.dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--color-text-tertiary);
+  animation: bounce 1.2s infinite;
+}
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+@keyframes bounce {
+  0%,80%,100% { transform: translateY(0); }
+  40% { transform: translateY(-4px); }
+}
+
+.input-row { display: flex; gap: 8px; align-items: flex-end; margin-bottom: 1.25rem; }
+
+#user-input {
+  flex: 1;
+  border: 0.5px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: var(--font);
+  color: var(--color-text);
+  background: var(--color-bg);
+  resize: none;
+  min-height: 42px;
+  max-height: 120px;
+  outline: none;
+  line-height: 1.5;
+}
+#user-input:focus { border-color: var(--color-text-secondary); }
+#user-input::placeholder { color: var(--color-text-tertiary); }
+
+#send-btn {
+  width: 42px; height: 42px;
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--color-border-strong);
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+#send-btn:hover { background: var(--color-bg-secondary); }
+#send-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+
+.generate-section {
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  background: var(--color-bg);
+}
+.generate-section h3 { font-size: 15px; font-weight: 500; margin-bottom: 0.4rem; }
+.generate-section p { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 1rem; line-height: 1.55; }
+
+.file-list { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1rem; }
+.file-chip {
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: var(--color-bg-secondary);
+  border: 0.5px solid var(--color-border);
+  color: var(--color-text-tertiary);
+  font-family: var(--font-mono);
+}
+
+#generate-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--color-border-strong);
+  background: var(--color-bg);
+  font-size: 14px;
+  font-family: var(--font);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.15s;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+#generate-btn:hover { background: var(--color-bg-secondary); }
+#generate-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.progress-bar {
+  height: 2px;
+  background: var(--color-border);
+  border-radius: 2px;
+  margin-top: 10px;
+  overflow: hidden;
+  display: none;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+  width: 0%;
+}
+
+.gen-status {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 8px;
+  min-height: 18px;
+  text-align: center;
+}
+
+.success-note {
+  margin-top: 1rem;
+  padding: 10px 12px;
+  background: var(--color-bg-secondary);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  display: none;
+}
+.success-note code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: var(--color-bg);
+  padding: 1px 5px;
+  border-radius: 3px;
+  border: 0.5px solid var(--color-border);
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="wordmark">content skills — setup</div>
+
+  <div class="phase-bar" id="phase-bar">
+    <div class="phase-dot active"></div>
+    <div class="phase-dot"></div>
+    <div class="phase-dot"></div>
+    <div class="phase-dot"></div>
+    <div class="phase-dot"></div>
+    <div class="phase-dot"></div>
+  </div>
+  <div class="phase-label" id="phase-label">Phase 1 of 6 — Identity</div>
+
+  <div class="chat-window" id="messages"></div>
+
+  <div class="input-row" id="input-row">
+    <textarea id="user-input" placeholder="Type your answer..." rows="1"></textarea>
+    <button id="send-btn" aria-label="Send">
+      <i class="ti ti-arrow-up" style="font-size:16px"></i>
+    </button>
+  </div>
+
+  <div class="generate-section" id="generate-section" style="display:none">
+    <h3>Ready to generate your reference files</h3>
+    <p>One click. Claude extracts your answers and writes all 14 JSON files. Drop the downloaded ZIP into <code>references/shared/</code> in your repo.</p>
+    <div class="file-list">
+      <span class="file-chip">voice.json</span>
+      <span class="file-chip">audience.json</span>
+      <span class="file-chip">writing-style.json</span>
+      <span class="file-chip">brand-identity.json</span>
+      <span class="file-chip">content-pillars.json</span>
+      <span class="file-chip">preferred-banned-words.json</span>
+      <span class="file-chip">dos-donts.json</span>
+      <span class="file-chip">cta-style.json</span>
+      <span class="file-chip">platform-settings.json</span>
+      <span class="file-chip">content-examples.json</span>
+      <span class="file-chip">hook-database.json</span>
+      <span class="file-chip">visual-language.json</span>
+      <span class="file-chip">seo-keywords.json</span>
+      <span class="file-chip">ai-writing-filter.json</span>
+    </div>
+    <button id="generate-btn">
+      <i class="ti ti-download" style="font-size:15px"></i>
+      Generate &amp; download my reference files
+    </button>
+    <div class="progress-bar" id="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <div class="gen-status" id="gen-status"></div>
+    <div class="success-note" id="success-note">
+      <strong>Next step:</strong> Unzip the file and copy the <code>references/shared/</code> folder into the root of your <code>contentskills</code> repo. All 31 skills will immediately read your voice, audience, and strategy. You can refine any file manually later.
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+
+/* ------------------------------------------------------------------ */
+/*  CONFIG — update this after deploying your Vercel proxy             */
+/* ------------------------------------------------------------------ */
+const API_URL = "https://contentskills-proxy.vercel.app/api/claude";
+/* ------------------------------------------------------------------ */
+
+const PHASES = [
+  "Phase 1 of 6 — Identity",
+  "Phase 2 of 6 — Audience",
+  "Phase 3 of 6 — Voice",
+  "Phase 4 of 6 — Content pillars",
+  "Phase 5 of 6 — Platforms & CTAs",
+  "Phase 6 of 6 — Review",
+];
+
+const SYSTEM_PROMPT = `You are running a setup interview for a content marketing AI skills system. Your job is to feel like a sharp colleague who already knows the user's world — not a form. Keep momentum high. The user should never stare at a blank box wondering what to write. Every hard question should come with specific, contextual options they can react to in under 30 seconds.
+
+You are interviewing in 6 phases. Use EVERYTHING you've learned to make later questions easier and more specific.
+
+PHASE 1 — Identity (2 questions max):
+- Opening question: Ask for their brand name, what they do in one sentence, and their website URL. Say you'll use the site for context if they have one.
+- Follow-up: "What's the primary goal of your content?" — give 4 lettered options tailored to what they just described (e.g. generating inbound leads, building authority, nurturing pipeline, growing a community). End with "— or something else?" so they can redirect.
+
+PHASE 2 — Audience (3 questions max):
+- Ask who specifically they write for (role, industry, situation). Include a concrete example in the question so they know the level of specificity you want — e.g. "like 'solo founders pre-Series A building SaaS' or 'HR managers at 200-person companies dealing with turnover'".
+- "What's the one problem they're obsessing over right now?" — DO NOT ask this as a blank question. First, based on the audience they described, generate 3 specific, realistic problems they might be wrestling with. Format: "Is it something like: (a) [specific problem A], (b) [specific problem B], or (c) [specific problem C]? Or describe it in your own words." Make the options feel like you actually know the space.
+- "What exact words or phrases do they use to describe that problem?" — seed with 2–3 example phrases drawn from their industry/context before asking.
+
+PHASE 3 — Voice (3 questions max):
+- Voice words: Based on everything you know so far, suggest 6 voice descriptors split as: "Sounds like you: [A], [B], [C] — Definitely not: [D], [E], [F]." Ask them to tweak from there rather than answering from scratch.
+- Banned phrases: Seed with 5–6 specific guesses for their niche (e.g. for B2B/tech/marketing: "leverage", "game-changer", "disruptive", "authentic", "crush it", "move the needle" — adjust for their actual space). Ask them to keep, remove, or add.
+- Signature POV: Give ONE concrete example belief statement in their exact space — format: "Most [people in their space] think [X], but actually [Y]." Then ask for theirs.
+
+PHASE 4 — Content pillars (2 questions max):
+- Suggest 4 specific pillars based on the business, audience, and POV gathered so far. Format: "Based on what you've told me, here are 4 likely pillars: [1], [2], [3], [4]. Which ones fit? What would you swap or add?"
+- Ask for 1–2 examples of their best content (LinkedIn post, newsletter excerpt, anything real).
+
+PHASE 5 — Platforms & CTAs (2 questions max):
+- Which platforms they're active on and roughly how often on each.
+- What CTAs they actually use, any keyword DM triggers, and what they'd never say as a CTA.
+
+PHASE 6 — Review:
+- Summarise everything captured in plain language. Ask: "Does this sound right? Anything to correct or add?"
+- Once they confirm, output exactly: READY_TO_GENERATE on its own line, then stop.
+
+RULES:
+- Ask ONE question at a time. Never list multiple questions.
+- Messages: 2–4 sentences max plus examples. No walls of text.
+- ALWAYS use earlier context to personalise later questions. Generic suggestions are a failure.
+- When you move to a new phase, put PHASE_X (e.g. PHASE_2) on its own line first, then your question. Do this exactly once per phase transition.
+- If an answer is vague, ask one specific clarifying question before moving on.
+- Goal: the user should be able to respond to every question in under 30 seconds.`;
+
+const EXTRACTION_PROMPT = `You are extracting structured data from a setup interview to populate 14 JSON reference files for a content marketing skills system.
+
+Read the full conversation and extract everything needed. Use the user's exact words where possible. Where information was not given, use a clear placeholder comment like "[not provided — fill in manually]".
+
+Return a single valid JSON object with exactly these 14 keys. Each value is the full content for that file:
+
+voice, audience, writing-style, brand-identity, content-pillars, preferred-banned-words, dos-donts, cta-style, platform-settings, content-examples, hook-database, visual-language, seo-keywords, ai-writing-filter
+
+For voice: include brand_name, one_liner, primary_content_goal, voice_is (array), voice_is_not (array), pov, energy (array), humor, pronoun, signature_pov, voice_examples object with sounds_like_me and does_not_sound_like_me arrays.
+
+For audience: include primary object with label, role, industry, biggest_challenge, internal_monologue, language_they_use (array of exact phrases), language_they_hate (array), awareness_stage, trust_objection.
+
+For writing-style: include sentence_length, paragraph_structure, use_of_questions (object with enabled and style), use_of_lists (same), use_of_bold (same), storytelling_arc, pacing_notes.
+
+For brand-identity: include brand_name, what_you_do, who_you_serve, primary_outcome_you_deliver, offers (array), content_mission, positioning (object with category, differentiation, against), social_proof (object).
+
+For content-pillars: include content_pillars array where each has id, name, themes (array), audience_problem, brand_signal, best_formats (array), example_angles (array). Include pillar_mix_rules object.
+
+For preferred-banned-words: include preferred_words (array) and banned_words (array) — include their specific words plus standard AI-cliche defaults like "dive into", "delve into", "game-changer", "leverage", "unlock", "seamless", "robust", "synergy", "hustle", "grind", "crushing it", "in today's fast-paced world", "excited to share".
+
+For dos-donts: include dos (array of strings) and donts (array of strings) — derive these from their voice and what they've said about their content.
+
+For cta-style: include philosophy, default_cta_type, cta_ladder (object with cold_audience, warm_audience, hot_audience), active_keyword_triggers (array of objects with keyword and delivers), platform_ctas (object with linkedin, instagram, x_threads, newsletter, youtube arrays), never_say (array).
+
+For platform-settings: include platform_settings object with linkedin, instagram, x_twitter, threads, newsletter, youtube, blog sub-objects. Set active true/false based on what they mentioned. Include post_frequency, tone_vs_brand_default, hashtag settings where relevant.
+
+For content-examples: include post_formats (array of format names), examples (array — use any content they pasted, or empty array if none), hooks_library (array — extract any hook lines from their examples), cta_library (array — extract any CTAs they mentioned).
+
+For hook-database: return { "hooks": [] }.
+
+For visual-language: include basic structure with talking_head_setups, broll_categories, on_screen_text, editing_rhythm, what_not_to_suggest. Fill with sensible defaults if not discussed.
+
+For seo-keywords: include seo_keywords with primary_topics (empty array if not discussed), longtail_opportunities (empty array), youtube_specific object.
+
+For ai-writing-filter: return the standard filter object with name "content_ai_writing_filter", version "1.0.0", and the standard lint rules for generic language, template structure, ungrounded stats, buzzword reveals, benefit stacking, slogan aphorisms, over-polished cadence, em-dash overuse, and missing authorship markers. Add their specific banned words to the language_preferences.avoid_words array.
+
+Return ONLY the JSON object. No explanation. No markdown fences. No preamble.`;
+
+let history = [];
+let currentPhase = 0;
+let isWaiting = false;
+let isComplete = false;
+let pendingUrl = null;
+
+const messagesEl = document.getElementById("messages");
+const inputEl = document.getElementById("user-input");
+const sendBtn = document.getElementById("send-btn");
+const phaseLabelEl = document.getElementById("phase-label");
+const phaseBarEl = document.getElementById("phase-bar");
+const generateSection = document.getElementById("generate-section");
+const generateBtn = document.getElementById("generate-btn");
+const genStatus = document.getElementById("gen-status");
+const progressBar = document.getElementById("progress-bar");
+const progressFill = document.getElementById("progress-fill");
+const successNote = document.getElementById("success-note");
+
+function updatePhaseUI(phase) {
+  const dots = phaseBarEl.querySelectorAll(".phase-dot");
+  dots.forEach((d, i) => {
+    d.classList.remove("done", "active");
+    if (i < phase) d.classList.add("done");
+    else if (i === phase) d.classList.add("active");
+  });
+  phaseLabelEl.textContent = PHASES[Math.min(phase, 5)];
+}
+
+function addMessage(role, text) {
+  const wrap = document.createElement("div");
+  wrap.className = `msg ${role === "assistant" ? "ai" : "user"}`;
+  const av = document.createElement("div");
+  av.className = "avatar";
+  av.textContent = role === "assistant" ? "CS" : "You";
+  const bubble = document.createElement("div");
+  bubble.className = "bubble";
+  bubble.textContent = text;
+  wrap.appendChild(av);
+  wrap.appendChild(bubble);
+  messagesEl.appendChild(wrap);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+function showTyping() {
+  const wrap = document.createElement("div");
+  wrap.className = "msg ai";
+  wrap.id = "typing";
+  const av = document.createElement("div");
+  av.className = "avatar";
+  av.textContent = "CS";
+  const bubble = document.createElement("div");
+  bubble.className = "bubble typing";
+  [0,1,2].forEach(() => {
+    const d = document.createElement("div");
+    d.className = "dot";
+    bubble.appendChild(d);
+  });
+  wrap.appendChild(av);
+  wrap.appendChild(bubble);
+  messagesEl.appendChild(wrap);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+function removeTyping() {
+  const t = document.getElementById("typing");
+  if (t) t.remove();
+}
+
+function setProgress(pct, label) {
+  progressBar.style.display = "block";
+  progressFill.style.width = pct + "%";
+  genStatus.textContent = label;
+}
+
+async function callClaude(messages, system, maxTokens) {
+  const body = {
+    model: "claude-sonnet-4-20250514",
+    max_tokens: maxTokens || 1000,
+    system: system,
+    messages: messages
+  };
+  if (pendingUrl) {
+    body.url_context = pendingUrl;
+    pendingUrl = null;
+  }
+  const res = await fetch(API_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Proxy error ${res.status}: ${err}`);
+  }
+  const data = await res.json();
+  return data.content?.[0]?.text || "";
+}
+
+async function handleSend() {
+  const text = inputEl.value.trim();
+  if (!text || isWaiting || isComplete) return;
+  inputEl.value = "";
+  inputEl.style.height = "42px";
+  addMessage("user", text);
+  history.push({ role: "user", content: text });
+  // On first user message, extract URL so proxy can scrape it for context
+  if (history.filter(m => m.role === "user").length === 1) {
+    const urlMatch = text.match(/https?:\/\/[^\s]+/);
+    if (urlMatch) pendingUrl = urlMatch[0];
+  }
+  isWaiting = true;
+  sendBtn.disabled = true;
+  showTyping();
+  try {
+    const reply = await callClaude(history, SYSTEM_PROMPT, 1000);
+    removeTyping();
+    let clean = reply;
+    const phaseMatch = reply.match(/^PHASE_(\d)/m);
+    if (phaseMatch) {
+      const p = parseInt(phaseMatch[1]) - 1;
+      if (p !== currentPhase) { currentPhase = p; updatePhaseUI(currentPhase); }
+      clean = reply.replace(/^PHASE_\d\n?/m, "").trim();
+    }
+    const ready = clean.includes("READY_TO_GENERATE");
+    clean = clean.replace("READY_TO_GENERATE", "").trim();
+    if (clean) {
+      addMessage("assistant", clean);
+      history.push({ role: "assistant", content: clean });
+    }
+    if (ready) {
+      isComplete = true;
+      document.getElementById("input-row").style.display = "none";
+      generateSection.style.display = "block";
+      updatePhaseUI(6);
+    }
+  } catch(e) {
+    removeTyping();
+    addMessage("assistant", "Something went wrong — please try again. (" + e.message + ")");
+  }
+  isWaiting = false;
+  sendBtn.disabled = false;
+  inputEl.focus();
+}
+
+generateBtn.addEventListener("click", async () => {
+  generateBtn.disabled = true;
+  setProgress(10, "Reading your answers...");
+  try {
+    const convo = history.map(m => `${m.role.toUpperCase()}: ${m.content}`).join("\n\n");
+    setProgress(30, "Extracting your brand data...");
+    const raw = await callClaude(
+      [{ role: "user", content: EXTRACTION_PROMPT + "\n\nCONVERSATION:\n" + convo }],
+      "You extract structured JSON from interview transcripts. Return only valid JSON.",
+      8000
+    );
+    setProgress(70, "Building your reference files...");
+    let text = raw.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+    const files = JSON.parse(text);
+    setProgress(85, "Packaging your ZIP...");
+    const zip = new JSZip();
+    const folder = zip.folder("references/shared");
+    Object.entries(files).forEach(([name, content]) => {
+      folder.file(`${name}.json`, JSON.stringify(content, null, 2));
+    });
+    const blob = await zip.generateAsync({ type: "blob" });
+    setProgress(100, "Done.");
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "contentskills-references.zip";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    genStatus.textContent = "✓ Downloaded successfully.";
+    generateBtn.innerHTML = '<i class="ti ti-download" style="font-size:15px"></i> Download again';
+    generateBtn.disabled = false;
+    successNote.style.display = "block";
+  } catch(e) {
+    genStatus.textContent = "Error — " + e.message;
+    console.error(e);
+    generateBtn.disabled = false;
+  }
+});
+
+inputEl.addEventListener("keydown", e => {
+  if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); handleSend(); }
+});
+inputEl.addEventListener("input", () => {
+  inputEl.style.height = "auto";
+  inputEl.style.height = Math.min(inputEl.scrollHeight, 120) + "px";
+});
+sendBtn.addEventListener("click", handleSend);
+
+async function init() {
+  const opening = "Hey! Let's get your content skills set up. What's your brand name and what do you do in one sentence? Drop your website URL too if you have one — I'll pull context from it to make the rest of the questions more specific to you.";
+  addMessage("assistant", opening);
+  history.push({ role: "assistant", content: opening });
+  sendBtn.disabled = false;
+  inputEl.focus();
+}
+
+updatePhaseUI(0);
+init();
+</script>
+</body>
+</html>

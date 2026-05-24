@@ -1,0 +1,51 @@
+{
+  "_instructions": "The psychographic portrait of who all content is written for. Skills read this to calibrate tone, hooks, examples, and CTAs. Fill in with real specificity — not 'marketing manager' but 'B2B SaaS founder, 1–10 person team, posting on LinkedIn but getting no traction'.",
+
+  "audience": {
+    "primary": {
+      "label": "[SHORT LABEL — e.g. 'The Stuck Founder' or 'The Scaling Agency Owner']",
+      "role": "[JOB TITLE / ROLE]",
+      "industry": "[INDUSTRY OR NICHE]",
+      "company_size": "[e.g. 'solo to 10-person team' OR 'series A SaaS' OR 'established SME']",
+      "experience_level": "[junior / mid / senior / founder / executive]",
+      "online_presence": ["[WHERE THEY HANG OUT 1 — e.g. LinkedIn]", "[WHERE 2 — e.g. Twitter/X]", "[WHERE 3]"],
+
+      "biggest_challenge": "[THEIR MAIN PROFESSIONAL/PERSONAL CHALLENGE RIGHT NOW]",
+      "keeps_them_up": "[WHAT THEY LIE AWAKE THINKING ABOUT]",
+      "what_they_tried": "[WHAT SOLUTIONS THEY'VE ALREADY ATTEMPTED THAT DIDN'T WORK]",
+      "embarrassing_gap": "[WHAT THEY'RE EMBARRASSED TO ADMIT THEY DON'T KNOW]",
+
+      "currently_believes": "[THEIR CURRENT BELIEF ABOUT YOUR TOPIC AREA]",
+      "misconception_to_correct": "[THE WRONG BELIEF YOU WANT TO CHALLENGE]",
+      "knows_but_doesnt_act_on": "[WHAT THEY ALREADY KNOW IS TRUE BUT STRUGGLE TO EXECUTE]",
+
+      "content_engages_with": "[WHAT KIND OF CONTENT THEY ACTUALLY ENGAGE WITH]",
+      "stops_scrolling_for": "[WHAT MAKES THEM STOP AND READ]",
+      "shares_when": "[WHAT TRIGGERS A SHARE]",
+      "unfollows_when": "[WHAT MAKES THEM UNFOLLOW]",
+
+      "language_they_use": [
+        "[EXACT PHRASE THEY USE TO DESCRIBE THEIR PROBLEM 1]",
+        "[EXACT PHRASE 2]",
+        "[EXACT PHRASE 3]"
+      ],
+      "language_they_hate": [
+        "[PHRASE THEY CRINGE AT HEARING FROM PEOPLE IN YOUR SPACE 1]",
+        "[PHRASE 2]"
+      ],
+      "internal_monologue": "[THEIR PRIVATE INTERNAL MONOLOGUE WHEN FACING THE PROBLEM YOU ADDRESS]",
+
+      "awareness_stage": "[problem aware / solution aware / brand aware]",
+      "trust_objection": "[WHAT OBJECTION THEY HAVE BEFORE TRUSTING YOUR CONTENT]",
+      "loyalty_trigger": "[WHAT MAKES THEM A LOYAL FOLLOWER VS ONE-TIME READER]"
+    },
+
+    "secondary": {
+      "_instructions": "Optional. Fill in if you have a meaningful secondary audience segment with different needs.",
+      "label": "[LABEL]",
+      "role": "",
+      "biggest_challenge": "",
+      "key_difference_from_primary": ""
+    }
+  }
+}

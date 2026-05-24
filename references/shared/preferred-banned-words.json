@@ -1,0 +1,60 @@
+{
+  "_instructions": "Two lists that define vocabulary identity. Preferred words are the creator's natural vocabulary — terms they reach for without thinking. Banned words are ones they'd cringe at in their own content. Both lists are checked by every writing skill before delivery. Pull these directly from existing content — not from what you think you sound like, but from what you actually write.",
+
+  "preferred_words": [
+    "[WORD/PHRASE 1 — e.g. 'system']",
+    "[WORD/PHRASE 2 — e.g. 'mechanism']",
+    "[WORD/PHRASE 3 — e.g. 'framework']",
+    "[WORD/PHRASE 4 — e.g. 'extraction']",
+    "[WORD/PHRASE 5 — e.g. 'pipeline']",
+    "[WORD/PHRASE 6 — e.g. 'signal']",
+    "[WORD/PHRASE 7 — e.g. 'practitioner']",
+    "[WORD/PHRASE 8 — e.g. 'specificity']",
+    "[WORD/PHRASE 9 — e.g. 'execution']",
+    "[WORD/PHRASE 10 — e.g. 'authority']"
+  ],
+
+  "banned_words": [
+    "dive into",
+    "delve into",
+    "game-changer",
+    "game-changing",
+    "at the end of the day",
+    "leverage",
+    "unlock",
+    "excited to share",
+    "thrilled to announce",
+    "in today's fast-paced world",
+    "seamless",
+    "robust",
+    "thought leader",
+    "guru",
+    "hustle",
+    "grind",
+    "crushing it",
+    "synergy",
+    "disrupting",
+    "changes the equation",
+    "at scale",
+    "not just",
+    "revolutionize",
+    "around the clock",
+    "[ADD BRAND-SPECIFIC BANNED WORD 1]",
+    "[ADD BRAND-SPECIFIC BANNED WORD 2]",
+    "[ADD BRAND-SPECIFIC BANNED WORD 3]"
+  ],
+
+  "banned_phrases": [
+    "In today's world...",
+    "I'm excited to share...",
+    "Let me tell you something...",
+    "It's worth noting that...",
+    "At the end of the day...",
+    "I hope this helps!",
+    "Don't hesitate to reach out",
+    "As we've seen...",
+    "In conclusion...",
+    "[ADD BRAND-SPECIFIC BANNED PHRASE 1]",
+    "[ADD BRAND-SPECIFIC BANNED PHRASE 2]"
+  ]
+}

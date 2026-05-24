@@ -1,0 +1,61 @@
+{
+  "_instructions": "CTA philosophy and active CTAs across all platforms. Skills use this to end content consistently and avoid conflicting or duplicate keyword triggers. One CTA per piece — always. Never beg. Match the relationship level to the content type.",
+
+  "cta_style": {
+    "philosophy": "[DESCRIBE YOUR CTA APPROACH — e.g. 'Short, direct, low-friction. Prefer keyword DM triggers to filter intent. Spoken casually at the end as if it just occurred to me — never pushed.' OR 'Soft and engagement-first. Questions that invite replies. Never hard-sell in organic content.' OR 'Save-focused for educational content. DM triggers for high-intent conversion content.']",
+
+    "default_cta_type": "[soft / engagement / follow / save / dm-trigger / click]",
+
+    "cta_ladder": {
+      "cold_audience": "[CTA for new/cold audience — e.g. 'Save this for later' or 'Follow for more on [topic]']",
+      "warm_audience": "[CTA for engaged followers — e.g. 'Reply with your biggest challenge' or 'DM me [KEYWORD]']",
+      "hot_audience": "[CTA for ready-to-buy — e.g. 'Book a call at [URL]' or 'DM me [KEYWORD] and I'll send the details']"
+    },
+
+    "active_keyword_triggers": [
+      {
+        "keyword": "[KEYWORD 1 — e.g. 'SYSTEM']",
+        "delivers": "[WHAT THE AUTO-DM SENDS — e.g. 'PDF breakdown of the content system']",
+        "use_in": "[WHICH SKILLS/PLATFORMS THIS TRIGGER IS ACTIVE ON]"
+      },
+      {
+        "keyword": "[KEYWORD 2]",
+        "delivers": "",
+        "use_in": ""
+      }
+    ],
+
+    "platform_ctas": {
+      "linkedin": [
+        "[LINKEDIN CTA 1 — e.g. 'What's your experience with this? Comment below.']",
+        "[LINKEDIN CTA 2 — e.g. 'Save this for the next time you need it.']",
+        "[LINKEDIN CTA 3 — e.g. 'Follow for [frequency] posts on [topic].']"
+      ],
+      "instagram": [
+        "[INSTAGRAM CTA 1 — e.g. 'Save this — you'll want to come back to it.']",
+        "[INSTAGRAM CTA 2 — e.g. 'Send this to someone who needs to hear it.']",
+        "[INSTAGRAM CTA 3 — e.g. 'DM me [KEYWORD] and I'll send you the full breakdown.']"
+      ],
+      "x_threads": [
+        "[X CTA 1 — e.g. 'Retweet if this resonated.']",
+        "[X CTA 2 — e.g. 'What would you add? Reply below.']"
+      ],
+      "newsletter": [
+        "[NEWSLETTER CTA 1 — e.g. 'Hit reply and tell me [specific question] — I read every response.']",
+        "[NEWSLETTER CTA 2 — e.g. 'Forward this to one person who'd get something from it.']"
+      ],
+      "youtube": [
+        "[YOUTUBE CTA 1 — e.g. 'Subscribe — I post [frequency] on [topic].']",
+        "[YOUTUBE CTA 2 — e.g. 'Tell me in the comments: [specific question]']"
+      ]
+    },
+
+    "never_say": [
+      "Don't forget to like and subscribe",
+      "Drop a comment if you agree",
+      "Share if you found value",
+      "[ADD BRAND-SPECIFIC CTA TO AVOID 1]",
+      "[ADD BRAND-SPECIFIC CTA TO AVOID 2]"
+    ]
+  }
+}
