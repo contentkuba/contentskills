@@ -119,7 +119,7 @@ Or install via Claude Code:
 
 ### Step 2 — Set up your brand voice (10 minutes)
 
-Open `setup-wizard.html` in your browser. Claude interviews you conversationally — ~12 questions across 6 phases — then generates all 14 reference files pre-filled with your voice, audience, and content strategy. Download the ZIP, drop the contents into `references/shared/`. Done.
+Open [this link](https://storyangled.com/setup-wizard) in your browser. Claude interviews you conversationally — ~12 questions across 6 phases — then generates all 14 reference files pre-filled with your voice, audience, and content strategy. Download the ZIP, drop the contents into `references/shared/`. Done.
 
 > **Manual setup:** If you prefer to fill in the JSON files directly, see [`references/SETUP.md`](references/SETUP.md).
 
