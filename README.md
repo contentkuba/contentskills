@@ -107,13 +107,13 @@ Every skill reads `brand-voice` first. That's what makes content sound like *you
 ### Step 1 — Get the repo
 
 ```bash
-git clone https://github.com/[your-username]/contentskills.git
+git clone https://github.com/contentkuba/contentskills.git
 ```
 
 Or install via Claude Code:
 
 ```bash
-/plugin marketplace add [your-username]/contentskills
+/plugin marketplace add contentkuba/contentskills
 /plugin install content-skills
 ```
 
